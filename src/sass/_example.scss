@@ -9,3 +9,26 @@
     border: solid 2px rgb(0, 0, 0);
     border-radius: 30px;
 }
+
+.text{
+    margin-top: 40px;
+    font-size: 30px;
+    // color: var(--main-accente-color);
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+body{
+    background-color: rgba(155, 180, 212, 0.527);
+}
+
+.img{
+    // position: absolute;
+    // top: 20px;
+    // left: 0;
+    // z-index: 0;
+    background-image: url(../images/photo_2021-07-22_12-22-24.jpg);
+    background-repeat: no-repeat;
+    background-size:contain
+    
+}

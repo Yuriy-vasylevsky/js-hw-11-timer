@@ -4,6 +4,7 @@ const refs = {
   startBtn: document.querySelector('button[data-action-start]'),
   stopBtn: document.querySelector('button[data-action-stop]'),
   clockface: document.querySelector('.js-clockface'),
+  body: document.querySelector('body'),
 
   clockfaceDays: document.querySelector('span[data-value="days"]'),
   clockfaceHours: document.querySelector('span[data-value="hours"]'),
@@ -48,7 +49,7 @@ class Timer {
       this.onTick(time)
       // updateClockface(time)
       // console.log(`${days} : ${hours} : ${mins} : ${sec}`)
-      
+      refs.body.classList.add('img')
     },1000); 
   }
 
@@ -79,7 +80,7 @@ class Timer {
 
 const timer2 = new Timer({
     selector: '#timer-1',
-    targetDate: new Date('Sept 17, 2021'),
+    targetDate: new Date('Sept 17, 2021, 20:00'),
     onTick: updateClockface,
 });
 
