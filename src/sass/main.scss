@@ -1,7 +1,64 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
 
-// Стили для файла с примером HTML-фрагмента
 @import './example';
+@import './base/common';
+@import './base/container';
+@import './button';
+@import './variables';
+.timer{
+    display: flex;
+    align-items: center;
+    background-color: rgba(75, 73, 77, 0.527);
+}
+
+body {
+	color: var(--main-text-color);
+	font-family: Roboto, sans-serif;
+	letter-spacing: 0.03em;
+	font-size: 14px;
+	font-style: normal;
+	margin: 0;
+	// padding-top: 80px;
+}
+
+.field {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 15px;
+    margin-right: 10px;
+    align-items: center;
+    border: solid 2px rgb(0, 0, 0);
+    border-radius: 30px;
+    background-color: rgba(90, 197, 211, 0.267);
+}
+
+.value{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+  
+}
+
+.label{
+    border-top: 3px solid #000;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.timer-btn{
+    margin-right: 30px;
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
