@@ -32,3 +32,21 @@ body{
     background-size:contain
     
 }
+
+.descr{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    border: rgb(0, 0, 0) 2px solid;
+
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: rgba(13, 199, 223, 0.562);
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),
+     0px 1px 1px 0px rgba(0,0,0,0.14), 
+     0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+.descr2{
+    opacity: 0;
+}

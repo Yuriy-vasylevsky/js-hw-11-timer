@@ -5,6 +5,7 @@ const refs = {
   stopBtn: document.querySelector('button[data-action-stop]'),
   clockface: document.querySelector('.js-clockface'),
   body: document.querySelector('body'),
+  descr: document.querySelector('.descr'),
 
   clockfaceDays: document.querySelector('span[data-value="days"]'),
   clockfaceHours: document.querySelector('span[data-value="hours"]'),
@@ -50,6 +51,7 @@ class Timer {
       // updateClockface(time)
       // console.log(`${days} : ${hours} : ${mins} : ${sec}`)
       refs.body.classList.add('img')
+      refs.descr.classList.remove('descr2')
     },1000); 
   }
 
